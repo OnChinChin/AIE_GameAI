@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AIE_GameAIWalkthrough", "AIE_GameAIWalkthrough\AIE_GameAIWalkthrough.vcxproj", "{70A34857-6ED9-4D85-9731-8433213B33DF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DailyWarmUp", "DailyWarmUp", "{D02CFD7A-7D83-4089-8B70-9FE35AC4BC3B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AIE_CasualStringBuilder", "AIE_CasualStringBuilder\AIE_CasualStringBuilder.vcxproj", "{478D9EAE-6500-4F5F-82CD-A9234AC9412E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,9 +25,20 @@ Global
 		{70A34857-6ED9-4D85-9731-8433213B33DF}.Release|x64.Build.0 = Release|x64
 		{70A34857-6ED9-4D85-9731-8433213B33DF}.Release|x86.ActiveCfg = Release|Win32
 		{70A34857-6ED9-4D85-9731-8433213B33DF}.Release|x86.Build.0 = Release|Win32
+		{478D9EAE-6500-4F5F-82CD-A9234AC9412E}.Debug|x64.ActiveCfg = Debug|x64
+		{478D9EAE-6500-4F5F-82CD-A9234AC9412E}.Debug|x64.Build.0 = Debug|x64
+		{478D9EAE-6500-4F5F-82CD-A9234AC9412E}.Debug|x86.ActiveCfg = Debug|Win32
+		{478D9EAE-6500-4F5F-82CD-A9234AC9412E}.Debug|x86.Build.0 = Debug|Win32
+		{478D9EAE-6500-4F5F-82CD-A9234AC9412E}.Release|x64.ActiveCfg = Release|x64
+		{478D9EAE-6500-4F5F-82CD-A9234AC9412E}.Release|x64.Build.0 = Release|x64
+		{478D9EAE-6500-4F5F-82CD-A9234AC9412E}.Release|x86.ActiveCfg = Release|Win32
+		{478D9EAE-6500-4F5F-82CD-A9234AC9412E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{478D9EAE-6500-4F5F-82CD-A9234AC9412E} = {D02CFD7A-7D83-4089-8B70-9FE35AC4BC3B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D32FA5AA-C467-4F49-9D24-993CF8DD4CF2}
