@@ -1,2 +1,6 @@
-﻿  Player.cpp
+﻿  FleeBehaviour.cpp
+C:\Users\s210537\Documents\AIE_GameAi\AIE_GameAIWalkthrough\FleeBehaviour.cpp(42,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\s210537\Documents\AIE_GameAi\AIE_GameAIWalkthrough\FleeBehaviour.cpp(42,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\s210537\Documents\AIE_GameAi\AIE_GameAIWalkthrough\FleeBehaviour.cpp(43,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\s210537\Documents\AIE_GameAi\AIE_GameAIWalkthrough\FleeBehaviour.cpp(43,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   AIE_GameAIWalkthrough.vcxproj -> C:\Users\s210537\Documents\AIE_GameAi\bin\Win32\Debug\AIE_GameAIWalkthrough.exe

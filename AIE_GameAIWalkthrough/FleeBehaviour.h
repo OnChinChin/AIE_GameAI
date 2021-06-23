@@ -1,7 +1,7 @@
 #pragma once
 
-#include"Behaviour.h"
-#include"GameObject.h"
+#include "Behaviour.h"
+#include "raymath.h"
 
 #include<functional>
 
@@ -29,7 +29,7 @@ protected:
 	Vector2 m_target;
 	float m_targetRadius = 1.0f;
 
-	std::function<void()> m_onArrive;
+	std::function<void()> m_onExit;
 
 private:
 };
