@@ -27,7 +27,7 @@ void GameObject::Update(float deltaTime)
 
 	m_velocity = Vector2Add(m_velocity, Vector2Scale(m_acceleration, deltaTime));
 
-	m_postion = Vector2Add(m_postion, Vector2Scale(m_velocity, deltaTime));
+	m_position = Vector2Add(m_position, Vector2Scale(m_velocity, deltaTime));
 
 	m_acceleration = { 0,0 };
 }
@@ -40,10 +40,10 @@ void GameObject::Draw()
 		m_behaviour->Draw(this);
 	}
 
-	Vector2 heading = Vector2Add(m_postion, m_velocity);
+	Vector2 heading = Vector2Add(m_position, m_velocity);
 
-	DrawCircle(m_postion.x, m_postion.y, 8, GRAY);
-	DrawLine(m_postion.x, m_postion.y, heading.x, heading.y, BLACK);
+	DrawCircle(m_position.x, m_position.y, 8, GRAY);
+	DrawLine(m_position.x, m_position.y, heading.x, heading.y, BLACK);
 }
 
 void GameObject::ApplyForce(const Vector2& force)
@@ -54,9 +54,9 @@ void GameObject::ApplyForce(const Vector2& force)
 }
 
 //getters
-const Vector2& GameObject::GetPostion() const
+const Vector2& GameObject::GetPosition() const
 {
-	return m_postion;
+	return m_position;
 }
 const Vector2& GameObject::GetVelocity() const
 {
@@ -74,9 +74,9 @@ Behaviour* GameObject::GetBehaviour()
 }
 
 //setters
-void  GameObject::SetPostion(const Vector2& pos)
+void  GameObject::SetPosition(const Vector2& pos)
 {
-	m_postion = pos;
+	m_position = pos;
 }
 
 void  GameObject::SetVelocity(const Vector2& vel)

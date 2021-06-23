@@ -40,7 +40,7 @@ void Application::Run()
 void Application::Load() 
 {
     m_player1 = new Player();
-    m_player1->SetPostion({ m_windowWidth * 0.25f, m_windowHeight / 2.0f });
+    m_player1->SetPosition({ m_windowWidth * 0.25f, m_windowHeight / 2.0f });
     m_player1->SetFriction(1.0f);
     
 

@@ -1,18 +1,17 @@
 #include"Player.h"
 #include"KeyBoardBehaviour.h"
-
-
-//PART 6 UPTOOOOO
-
-
+#include"SeekBehaviour.h"
 
 Player::Player()
 {
 	m_kbBehaviour = new KeyboardBehaviour();
-	//m_seekBehaviour = new SeekBehaviour();
-	//m_seekBehaviour->OnArrive([this](){
-	//     SetBehaviour(m_kbBehavoiur);
-	// }
+	m_seekBehaviour = new SeekBehaviour();
+	m_seekBehaviour->SetTargetRadius(25.0f);
+	m_seekBehaviour->OnArrive([this]()
+	{
+	     SetBehaviour(m_kbBehaviour);
+	 });
+
 
 
 	SetBehaviour(m_kbBehaviour);
@@ -23,7 +22,7 @@ Player::~Player()
 {
 	SetBehaviour(nullptr);
 
-	//delete m_seekBehaviour;
+	delete m_seekBehaviour;
 	delete m_kbBehaviour;
 }
 
@@ -32,7 +31,14 @@ void Player::Update(float deltaTime)
 
 	if (IsMouseButtonPressed(0))
 	{
-		//SetBehaviour(m_seekBehaviour);
+		m_seekBehaviour->SetTarget(GetMousePosition());
+		SetBehaviour(m_seekBehaviour);
+	}
+
+	if (IsMouseButtonPressed(2))
+	{
+		m_seekBehaviour->SetTarget(GetMousePosition());
+		SetBehaviour(m_seekBehaviour);
 	}
 
 	GameObject::Update(deltaTime);
